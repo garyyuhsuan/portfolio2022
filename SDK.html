@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Streaming SDK | GARY CHANG</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" href="css/component.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/jquery.fancybox.css">
+
+</head>
+<body>
+
+	<div class="wrapper">
+		
+		<!-- Start bg -->
+		<div class="bg"></div>
+		<!-- End bg -->
+
+		<!-- Strat header -->
+
+		<header class="header wow fadeInUp">
+
+			<div class="container">
+
+				<div class="navbar navbar--collapse u-clearfix">
+
+					<div class="logo-bar navbar__logo-bar">
+						
+						<a href="index.html" class="logo-btn">
+							
+						</a>
+
+						<div class="space"></div>
+
+
+						<a href="index.html" class="text-btn">PORTFOLIO</a>
+
+					</div>
+
+					<div class="nav navbar__nav">
+
+						<a href="#popup-overlay" class="menu-toggle">
+							<span></span>
+							<span></span>
+							<span></span>
+							
+							
+
+						</a>
+
+						<div id="popup-overlay" class="popup-menu">
+							<div class="container">
+								<div class="u-clearfix">
+									<a href="#" class="popup-menu__close">
+										<span></span>
+										<span></span>
+									</a>
+								</div>
+								<ul>
+									<li><a href="index.html#about" class="popup-menu__item">ABOUT</a></li>
+									<li><a href="index.html#works" class="popup-menu__item">WORKS</a></li>
+									<li><a href="index.html#about" class="popup-menu__item">RESUME</a></li>
+								</ul>
+								
+							</div>
+
+						</div>
+						
+					</div>
+					
+				</div>
+				
+			</div>
+			
+		</header>
+		<!-- End header -->
+		
+		<!-- Start Work -->
+
+		<div class="banner">
+			
+				<div class="banner_photo_sdk wow fadeInUp"></div>
+
+		</div>
+
+				<div class="container">
+					
+					<div class="work-content">
+						
+						<div class="title-master wow fadeInUp">Streaming SDK for Taiwanese Art
+						</div>
+
+						<div class="title-theme wow fadeInUp">OVERVIEW
+						</div>
+
+						<div class="context wow fadeInUp">A Taiwanese performing art has transformed the traditional heritage into a pop-cultural entertainment since years ago, however, the show was only available through cable broadcasters and DVD sold in convenience stores. Therefore, the retailer and the content owner were seeking the opportunity to launch the on-demand streaming service, which could be provided through the existing booking APP developed by the convenience store. Our team provided the full stack development and the streaming technique, and my role was to design the interface, which could guide the users smoothly through subscribing process and watching the show.
+						</div>
+
+						<div class="row_overview">
+							
+							<div class="left_col wow fadeInUp">
+							
+								<div class="title-theme">
+									COLLABORATE WITH
+								</div>
+										
+								<div class="team_text">
+											
+									Account Manager｜Andy Huang<br>
+									Product Manager｜Chien Huang<br>
+									Design Supervisor｜Ludan Chuang<br>
+									
+									Developers of iOS / Andorid<br>
+
+								</div>
+
+							</div>
+
+							<div class="right_col wow fadeInUp">
+								
+								<div class="title-theme">
+									MY ROLE
+								</div>
+
+								<div class="skill_text">
+											
+									User research<br>
+									Information Architecture<br>
+									User Flow<br>
+									Wireframing<br>
+									Prototyping<br>
+											
+								</div>
+
+							</div>
+						</div>
+
+						<div class="title-theme wow fadeInUp">APPROACH
+						</div>
+
+<!-- 1st part----------------------- -->
+
+						<div class="title-block wow fadeInUp">Phase 1. Take a closer look at the episodes structure and the audience behavior
+						</div>
+
+						<div class="content-block wow fadeInUp">
+							The show is divided by seasons but not the “seasons” most people familiar with. In fact, the show is constructed with a grand season, and sub seasons, and finally the episodes, which made it a bit tricky to customize the episodes grid view from the existing design templates at first.<br>
+							As for the audience behavior, audience tend to track the characters by episodes. Therefore, in the first version, I provided a characters filter system in the wireframe, but due to the developing schedule, this feature was eliminated.
+						</div>
+
+						<div class="row_overview u-clearfix">
+							
+							<div class="left wow fadeInUp">
+								
+								<img class="season" src="images/sdk/seasonStructure.gif" alt="">
+
+								<div class="caption" style="text-align: center;">
+									Season Structure
+								</div>
+
+
+							</div>
+
+							<div class="right wow fadeInUp">
+
+								<img class="filt"src="images/sdk/chac_filt_3.png" alt="">
+
+								<div class="caption" style="text-align: center;">
+									Characters Filter
+								</div>
+								
+							</div>
+						</div>
+
+<!-- 2nd part----------------------- -->
+
+						<div class="title-block wow fadeInUp">
+							Phase 2. Define IA and understand the paying system for subscription
+						</div>
+
+						<div class="content-block wow fadeInUp">
+							The SDK needed to be cooperated between the streaming service, the content provider, and the existing booking APP.<br>
+							Therefore, in order to assure the quality of the visual materials provided by the content provider, and the process of uploading the materials in the future, I am in charge of setting the material guideline in advance.<br>
+							As for the paying system, the process requires users to show the barcode at the store, which is generated by the booking app, in order to complete the subscription. Therefore, the status of the component should not confuse the users after them finish the payment, while the backend system is still buffering to check the paying result is successful or not.
+						</div>
+
+						<div class="pic-block wow fadeInUp">
+							
+							<img class="pic-sdk-ia" src="images/sdk/IA.png" alt="">
+						</div>
+<!-- 3rd part----------------------- -->
+
+						<div class="title-block wow fadeInUp">
+							Phase 3. Deliver prototype and define UX spec and design guideline
+						</div>
+
+						<div class="pic-block wow fadeInUp">
+							
+							<img class="pic-sdk-proto" src="images/sdk/proto.gif" alt="">
+
+							<div class="caption">Prototype</div>
+						</div>
+
+						<div class="pic-block wow fadeInUp">
+							
+							<img class="pic-sdk-block" src="images/sdk/user-flow.png" alt="">
+
+							<div class="caption">UX Spec</div>
+						</div>
+
+						<div class="pic-block wow fadeInUp">
+							
+							<img class="pic-sdk-block" src="images/sdk/dsguide.png" alt="">
+
+							<div class="caption">Design guideline</div>
+						</div>
+
+<!-- 4th part----------------------- -->
+
+						<div class="block-space"></div>
+
+						<div class="title-theme wow fadeInUp">RESULT
+						</div>
+
+						<div class="content-block wow fadeInUp">
+							1 User Research<br>
+							1 UX spec<br>
+							1 Design guideline<br>
+							1 Prototype<br>
+							<br>
+							<br>
+							<b>The project is still ongoing, thus certain image are blurred.</b>
+
+							<br>
+							<br>
+							<br>
+							<br>
+							
+						</div>
+
+
+					</div>
+					
+				</div>
+
+		<!-- Start footer -->
+		<footer class="footer">
+
+			<div class="container">
+
+				<div class="footer-title u-clearfix">
+					
+					<img class="image-footerlogo" src="images/logobg.svg" alt="">
+
+					<div class="footer-text">GARY CHANG - PORTFOLIO</div>
+
+					<br>
+
+				</div>
+
+				<div class="contact-text">
+					gary.yuhsuan@gmail.com．(886)938016589
+				</div>
+
+				<br>
+
+				<div class="copyright">Copyright © 2020 GARY CHANG All Right Reserved</div>
+
+			</div>
+
+		</footer>
+		<!-- End footer -->
+
+
+
+
+	</div>
+
+	<!-- JS -->
+	<script src="js/jquery-2.0.2.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/jquery.fancybox.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/custom.js"></script>
+
+		
+	
+</body>
+</html>
