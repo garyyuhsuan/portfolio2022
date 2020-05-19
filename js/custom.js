@@ -5,10 +5,10 @@ $(document).ready(function(){
 		var scrollDistance = $(window).scrollTop();
 		var $header = $(".js-header");
 		if(scrollDistance > 80){
-			$header.addClass("header--colored");
+			$header.addClass("scrolleff");
 		}
 		else{
-			$header.removeClass("header--colored");
+			$header.removeClass("scrolleff");
 		}
 	})
 
