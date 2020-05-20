@@ -351,6 +351,7 @@
     padding-right: 80px;
     padding-top: 20px;
     padding-bottom: 20px;
+    overflow: hidden;
 
 }
 
@@ -369,7 +370,6 @@
     width: 100%;
     height: 280px;
     border-radius: 4px;
-    /*overflow: hidden;*/
 
     background-image: url("../images/kv/sdk.png");
     background-repeat: no-repeat;
@@ -378,11 +378,31 @@
 
     margin-bottom: 10px;
 
+    text-align: center;
+
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    font-family: 'Montserrat','Raleway', 'Helvetica', 'roboto', arial, sans-serif;
+    color: #fff;
+
 }
 
+
 .kv1:after{
-    content: "";
-    background-color: #abf0e9;
+    content: "Streaming SDK for Taiwanese Art";
+
+    text-align: center;
+    vertical-align: middle;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 280px;
+    font-family: 'Montserrat','Raleway', 'Helvetica', 'roboto', arial, sans-serif;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: rgba(0,0,0,0.4) 0px 0px 3px;
+
+    background-color: rgba(171, 240, 233, .5);
+    
     opacity: 0;
 
     display: inline-block;
@@ -392,12 +412,14 @@
 
     transition: all 0.5s;
 
+    
+
 
 }
 
 .kv1:hover:after{
-    opacity: .6;
-
+    
+    opacity: 1;
 }
 
 
@@ -418,8 +440,20 @@
 }
 
 .kv2:after{
-    content: "";
-    background-color: #fa9191;
+
+    content: "UI Solution for Premiere Campaigns";
+
+    text-align: center;
+    vertical-align: middle;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 280px;
+    font-family: 'Montserrat','Raleway', 'Helvetica', 'roboto', arial, sans-serif;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: rgba(0,0,0,0.4) 0px 0px 3px;
+
+    background-color: rgba(250, 145, 145, .5);
+    
     opacity: 0;
 
     display: inline-block;
@@ -433,7 +467,7 @@
 }
 
 .kv2:hover:after{
-    opacity: .6;
+    opacity: 1;
 
 }
 
@@ -449,11 +483,24 @@
     background-position: center;
 
     margin-bottom: 10px;
+
+
 }
 
 .kv3:after{
-    content: "";
-    background-color: #f4a548;
+    content: "Chatbot Service for Whisky Brand";
+
+    text-align: center;
+    vertical-align: middle;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 280px;
+    font-family: 'Montserrat','Raleway', 'Helvetica', 'roboto', arial, sans-serif;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: rgba(0,0,0,0.4) 0px 0px 3px;
+
+    background-color: rgba(244, 165, 72, .5);
+    
     opacity: 0;
 
     display: inline-block;
@@ -463,11 +510,10 @@
 
     transition: all 0.5s;
 
-
 }
 
 .kv3:hover:after{
-    opacity: .6;
+    opacity: 1;
 
 }
 
@@ -486,8 +532,21 @@
 }
 
 .kv4:after{
-    content: "";
-    background-color: #fdd365;
+
+    content: "Form Page Design For Second Hand Automobile Platform";
+
+    text-align: center;
+    vertical-align: middle;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 280px;
+    font-family: 'Montserrat','Raleway', 'Helvetica', 'roboto', arial, sans-serif;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: rgba(0,0,0,0.4) 0px 0px 3px;
+
+
+    background-color: rgba(253, 211, 101, .5);
+    
     opacity: 0;
 
     display: inline-block;
@@ -501,7 +560,7 @@
 }
 
 .kv4:hover:after{
-    opacity: .6;
+    opacity: 1;
 
 }
 
@@ -520,8 +579,20 @@
 }
 
 .kv5:after{
-    content: "";
-    background-color: #e4f9ff;
+    
+    content: "Icons Design For Streaming APP";
+
+    text-align: center;
+    vertical-align: middle;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 280px;
+    font-family: 'Montserrat','Raleway', 'Helvetica', 'roboto', arial, sans-serif;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: rgba(0,0,0,0.4) 0px 0px 3px;
+
+    background-color: rgba(228, 249, 255, .5);
+    
     opacity: 0;
 
     display: inline-block;
@@ -535,7 +606,7 @@
 }
 
 .kv5:hover:after{
-    opacity: .6;
+    opacity: 1;
 
 }
 
@@ -552,6 +623,8 @@
     .kv1:after{
     width: 100%;
     height: 160px;
+    line-height: 160px;
+    font-size: 16px;
 
     }
 
@@ -567,6 +640,9 @@
     .kv2:after{
     width: 100%;
     height: 160px;
+    line-height: 160px;
+    font-size: 16px;
+
 
     }
 
@@ -582,6 +658,9 @@
     .kv3:after{
     width: 100%;
     height: 160px;
+    line-height: 160px;
+    font-size: 16px;
+
 
     }
 
@@ -597,6 +676,9 @@
     .kv4:after{
     width: 100%;
     height: 160px;
+    line-height: 160px;
+    font-size: 16px;
+
 
     }
 
@@ -612,6 +694,9 @@
     .kv5:after{
     width: 100%;
     height: 160px;
+    line-height: 160px;
+    font-size: 16px;
+
 
     }
 }
@@ -629,6 +714,7 @@
     .kv1:after{
     width: 100%;
     height: 400px;
+    line-height: 400px;
 
     }
 
@@ -644,6 +730,7 @@
     .kv2:after{
     width: 100%;
     height: 400px;
+    line-height: 400px;
 
     }
 
@@ -659,6 +746,7 @@
     .kv3:after{
     width: 100%;
     height: 400px;
+    line-height: 400px;
 
     }
 
@@ -674,6 +762,7 @@
     .kv4:after{
     width: 100%;
     height: 400px;
+    line-height: 400px;
 
     }
 
@@ -689,6 +778,7 @@
     .kv5:after{
     width: 100%;
     height: 400px;
+    line-height: 400px;
 
     }
 }
