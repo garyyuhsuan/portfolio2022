@@ -281,10 +281,10 @@
     text-align: center;
     font-family: 'Montserrat','Raleway', 'Helvetica', 'roboto', arial, sans-serif;
     font-size: 40px;
-    font-weight: 700;
+    font-weight: 800;
     color: #484848;
     line-height: 80px;
-    transition: all 0.3s;
+/*    transition: all 0.3s;*/
 }
 @media (max-width: 768px){
     .popup-menu__item{
@@ -292,9 +292,9 @@
         line-height: 48px;
     }
 }
-.popup-menu__item:hover{
+/*.popup-menu__item:hover{
     color: #79bac1;
-}
+}*/
 
 /*-------------------------*/
 /* $Hero
