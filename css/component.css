@@ -371,7 +371,7 @@
     height: 280px;
     border-radius: 4px;
 
-    background-image: url("../images/kv/sdk.png");
+    background-image: url("../images/kv/sdk.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -431,7 +431,7 @@
     height: 280px;
     border-radius: 4px;
 
-    background-image: url("../images/kv/ui.png");
+    background-image: url("../images/kv/ui.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -477,7 +477,7 @@
     height: 280px;
     border-radius: 4px;
 
-    background-image: url("../images/kv/chatbot.png");
+    background-image: url("../images/kv/chatbot.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -523,7 +523,7 @@
     height: 280px;
     border-radius: 4px;
 
-    background-image: url("../images/kv/form.png");
+    background-image: url("../images/kv/form.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -570,7 +570,7 @@
     height: 280px;
     border-radius: 4px;
 
-    background-image: url("../images/kv/vpicon.png");
+    background-image: url("../images/kv/vpicon.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -591,7 +591,7 @@
     color: rgba(255, 255, 255, 1);
     text-shadow: rgba(0,0,0,0.4) 0px 0px 3px;
 
-    background-color: rgba(228, 249, 255, .5);
+    background-color: rgba(228, 249, 255, .8);
     
     opacity: 0;
 
