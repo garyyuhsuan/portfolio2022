@@ -91,7 +91,7 @@
     float: left;
 }
 
-.logobar{
+.logo-bar{
     /*padding-left: 80px;*/
 }
 @media (max-width: 768px){
@@ -99,6 +99,13 @@
         /*padding-left: 30px;*/
         padding: 12px;
         padding-top: 30px;
+    }
+}
+
+@media (min-width: 1200px){
+    .navbar__logo-bar{
+        /*padding-left: 30px;*/
+        padding-left: 8px;
     }
 }
 
@@ -113,15 +120,20 @@
     height: 36px;
 
     /*background-color: #fff;*/
-    background-image: url("../images/logobg.svg");
+    /*background-image: url("../images/logobg.svg");
     background-position: right;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: contain;*/
     float: left;
-    padding-left: 110px;
+    padding-left: 30px;
 
+}
 
-
+.motionLogo{
+    width: 36px;
+    height: 36px;
+    opacity: .6;
+    float: left;
 }
 
 /* space */
@@ -139,14 +151,16 @@
     position: relative;
     
     box-sizing: border-box;
-    font-size: 36px;
-    line-height: 36px;
-    font-weight: 800;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;
     font-family: 'Montserrat', 'Raleway', 'Helvetica', 'roboto', arial, sans-serif;
     letter-spacing: 0;
     text-decoration: none;
     color: #000;
     opacity: .5;
+    margin-left: 20px;
+    padding-top: 4px;
 }
 
 @media (max-width: 768px){
@@ -154,7 +168,7 @@
     .logo-btn{
         width: 24px;
         height: 24px;
-        padding-left: 50px;
+        padding-left: 30px;
     }
 
     .space{
@@ -165,12 +179,29 @@
     .text-btn{
         font-size: 24px;
         line-height: 24px;
+        margin-left: 28px;
+        padding-top: 3px;
     }
+
+    .motionLogo{
+    width: 28px;
+    height: 28px;
+    }
+
 }
 
 @media (min-width: 1200px){
     .logo-btn{
-        padding-left: 5px;
+        padding-left: 0px;
+    }
+
+    .space{
+        width: 1px;
+        
+    }
+
+    .text-btn{
+        margin-left: 4px;
     }
 }
 
@@ -196,6 +227,7 @@
     width: 30px;
     border-radius: 2px;
     background-color: #000;
+    opacity: .7;
     margin-bottom: 8px;
     transition: all 0.3s;
 }
@@ -230,13 +262,16 @@
 .popup-menu{
     position: fixed;
     top: 0;
-    left: 0;
-    width: 100%;
+    right: 0;
+    width: 40%;
     height: 100%;
     background-color: #fefefe;
     transition: all 0.3s;
     opacity: 0;
     visibility: hidden;
+    -webkit-box-shadow: -12px 0px 25px 2px rgba(0,0,0,0.2);
+    -moz-box-shadow: -12px 0px 25px 2px rgba(0,0,0,0.2);
+    box-shadow: -12px 0px 25px 2px rgba(0,0,0,0.2);
 }
 #popup-overlay:target{
     opacity: 1;
@@ -256,6 +291,10 @@
         width: 56px;
         height: 56px;
     }
+
+    .popup-menu{
+    width: 100%;
+    }
 }
 .popup-menu__close:hover{
     transform: rotate(180deg);
@@ -265,6 +304,7 @@
     height: 5px;
     border-radius: 2.5px;
     background-color: #000;
+    opacity: .7;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -279,11 +319,12 @@
 .popup-menu__item{
     display: block;
     text-align: center;
-    font-family: 'Montserrat','Raleway', 'Helvetica', 'roboto', arial, sans-serif;
+    font-family: 'Poppins', sans-serif,'Montserrat','Raleway', 'Helvetica', 'roboto', arial, sans-serif;
     font-size: 40px;
-    font-weight: 800;
+    font-weight: 700;
     color: #484848;
     line-height: 80px;
+
 /*    transition: all 0.3s;*/
 }
 @media (max-width: 768px){
@@ -314,11 +355,12 @@
     }
 }
 .hero__heading{
-    font-size: 80px;
-    font-weight: 800;
+    font-size: 60px;
+    font-weight: 700;
     line-height: 80px;
-    font-family: 'Montserrat','Raleway', 'Helvetica', 'roboto', arial, sans-serif;
+    font-family:'Poppins', sans-serif, 'Montserrat','Raleway', 'Helvetica', 'roboto', arial, sans-serif;
     color: #000;
+    opacity: .7;
 }
 @media (max-width: 768px){
     .hero__heading{
@@ -328,18 +370,33 @@
 }
 
 .hero__subheading{
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 400;
-    line-height: 30px;
-    font-family: 'Montserrat','Raleway', 'Helvetica', 'roboto', arial, sans-serif;
+    line-height: 36px;
+    font-family:'Poppins', sans-serif, 'Montserrat','Raleway', 'Helvetica', 'roboto', arial, sans-serif;
     color: #000;
     opacity: .5;
 }
+
+.typewrite{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    font-family:'Poppins', sans-serif, 'Montserrat','Raleway', 'Helvetica', 'roboto', arial, sans-serif;
+    color: #000;
+    opacity: .5;
+}
+
 @media (max-width: 768px){
     .hero__subheading{
         font-size: 16px;
-        line-height: 16px;
+        line-height: 24px;
     }
+
+    .typewrite{
+        font-size: 16px;
+        line-height: 24px;
+}
 }
 
 /*-------------------------*/
@@ -383,7 +440,7 @@
     font-size: 24px;
     font-weight: 600;
     line-height: 24px;
-    font-family: 'Montserrat','Raleway', 'Helvetica', 'roboto', arial, sans-serif;
+    font-family:'Poppins', sans-serif, 'Montserrat','Raleway', 'Helvetica', 'roboto', arial, sans-serif;
     color: #fff;
 
 }
@@ -397,7 +454,7 @@
     font-size: 24px;
     font-weight: 600;
     line-height: 280px;
-    font-family: 'Montserrat','Raleway', 'Helvetica', 'roboto', arial, sans-serif;
+    font-family:'Poppins', sans-serif, 'Montserrat','Raleway', 'Helvetica', 'roboto', arial, sans-serif;
     color: rgba(255, 255, 255, 1);
     text-shadow: rgba(0,0,0,0.4) 0px 0px 3px;
 
@@ -448,7 +505,7 @@
     font-size: 24px;
     font-weight: 600;
     line-height: 280px;
-    font-family: 'Montserrat','Raleway', 'Helvetica', 'roboto', arial, sans-serif;
+    font-family: 'Poppins', sans-serif,'Montserrat','Raleway', 'Helvetica', 'roboto', arial, sans-serif;
     color: rgba(255, 255, 255, 1);
     text-shadow: rgba(0,0,0,0.4) 0px 0px 3px;
 
@@ -495,7 +552,7 @@
     font-size: 24px;
     font-weight: 600;
     line-height: 280px;
-    font-family: 'Montserrat','Raleway', 'Helvetica', 'roboto', arial, sans-serif;
+    font-family: 'Poppins', sans-serif,'Montserrat','Raleway', 'Helvetica', 'roboto', arial, sans-serif;
     color: rgba(255, 255, 255, 1);
     text-shadow: rgba(0,0,0,0.4) 0px 0px 3px;
 
@@ -540,7 +597,7 @@
     font-size: 24px;
     font-weight: 600;
     line-height: 280px;
-    font-family: 'Montserrat','Raleway', 'Helvetica', 'roboto', arial, sans-serif;
+    font-family: 'Poppins', sans-serif,'Montserrat','Raleway', 'Helvetica', 'roboto', arial, sans-serif;
     color: rgba(255, 255, 255, 1);
     text-shadow: rgba(0,0,0,0.4) 0px 0px 3px;
 
@@ -587,7 +644,7 @@
     font-size: 24px;
     font-weight: 600;
     line-height: 280px;
-    font-family: 'Montserrat','Raleway', 'Helvetica', 'roboto', arial, sans-serif;
+    font-family: 'Poppins', sans-serif,'Montserrat','Raleway', 'Helvetica', 'roboto', arial, sans-serif;
     color: rgba(255, 255, 255, 1);
     text-shadow: rgba(0,0,0,0.4) 0px 0px 3px;
 
@@ -633,7 +690,7 @@
     font-size: 24px;
     font-weight: 600;
     line-height: 280px;
-    font-family: 'Montserrat','Raleway', 'Helvetica', 'roboto', arial, sans-serif;
+    font-family: 'Poppins', sans-serif,'Montserrat','Raleway', 'Helvetica', 'roboto', arial, sans-serif;
     color: rgba(255, 255, 255, 1);
     text-shadow: rgba(0,0,0,0.4) 0px 0px 3px;
 
@@ -679,7 +736,7 @@
     font-size: 24px;
     font-weight: 600;
     line-height: 280px;
-    font-family: 'Montserrat','Raleway', 'Helvetica', 'roboto', arial, sans-serif;
+    font-family: 'Poppins', sans-serif,'Montserrat','Raleway', 'Helvetica', 'roboto', arial, sans-serif;
     color: rgba(255, 255, 255, 1);
     text-shadow: rgba(0,0,0,0.4) 0px 0px 3px;
 
@@ -698,6 +755,52 @@
 }
 
 .kv7:hover:after{
+    opacity: 1;
+
+}
+
+.kv8{
+    display: inline-block;
+    width: 100%;
+    height: 280px;
+    border-radius: 4px;
+
+    background-image: url("../images/checkin/checkinKV.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    margin-bottom: 10px;
+}
+
+.kv8:after{
+    
+    content: "Event-Checkin System Design";
+
+    text-align: center;
+    vertical-align: middle;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 280px;
+    font-family: 'Montserrat','Raleway', 'Helvetica', 'roboto', arial, sans-serif;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: rgba(0,0,0,0.4) 0px 0px 3px;
+
+    background-color: rgba(248, 119, 0, .7);
+    
+    opacity: 0;
+
+    display: inline-block;
+    width: 100%;
+    height: 280px;
+    border-radius: 4px;
+
+    transition: all 0.5s;
+
+
+}
+
+.kv8:hover:after{
     opacity: 1;
 
 }
@@ -820,6 +923,24 @@
     }
 
     .kv7:after{
+    width: 100%;
+    height: 160px;
+    line-height: 160px;
+    font-size: 16px;
+
+
+    }
+
+    .kv8{
+    
+    width: 100%;
+    height: 160px;
+    border-radius: 4px;
+
+    margin-bottom: 4px;
+    }
+
+    .kv8:after{
     width: 100%;
     height: 160px;
     line-height: 160px;
@@ -942,6 +1063,22 @@
     line-height: 400px;
 
     }
+
+    .kv8{
+    
+    width: 100%;
+    height: 400px;
+    border-radius: 6px;
+
+    margin-bottom: 10px;
+    }
+
+    .kv8:after{
+    width: 100%;
+    height: 400px;
+    line-height: 400px;
+
+    }
 }
 
 /*-------------------------*/
@@ -986,9 +1123,9 @@
 
 .name{
     font-size: 24px;
-    font-weight: 800;
+    font-weight: 700;
     line-height: 24px;
-    font-family: 'Montserrat','Raleway', 'Helvetica', 'roboto', arial, sans-serif;
+    font-family:'Poppins', sans-serif, 'Montserrat','Raleway', 'Helvetica', 'roboto', arial, sans-serif;
     color: #000;
     padding-top: 30px;
     padding-bottom: 10px;
@@ -997,9 +1134,9 @@
 
 .intro{
     font-size: 14px;
-    font-weight: 1;
+    font-weight: 300;
     line-height: 30px;
-    font-family: 'Raleway', 'Helvetica', 'roboto', arial, sans-serif;
+    font-family:'Poppins', sans-serif, 'Raleway', 'Helvetica', 'roboto', arial, sans-serif;
     color: #000;
 
     padding-bottom: 50px;
@@ -1025,9 +1162,9 @@
     background-color: #5f6769;
     color: #fff;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 20px;
-    font-family: 'Raleway', 'Helvetica', 'roboto', arial, sans-serif;
+    font-family:'Poppins', sans-serif, 'Raleway', 'Helvetica', 'roboto', arial, sans-serif;
     text-align: center;
     transition: all 0.5s;
     border: solid 2px #5f6769;
@@ -1109,7 +1246,7 @@
 .footer-text{
     display: inline-block;
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 24px;
     font-family: 'Montserrat','Raleway', 'Helvetica', 'roboto', arial, sans-serif;
     color: #000;
@@ -1122,9 +1259,9 @@
 .copyright{
 
     font-size: 10px;
-    font-weight: 1;
+    font-weight: 300;
     line-height: 10px;
-    font-family: 'Raleway', 'Helvetica', 'roboto', arial, sans-serif;
+    font-family: 'Poppins', sans-serif,'Raleway', 'Helvetica', 'roboto', arial, sans-serif;
     color: #000;
     opacity: .4;
     text-align: center;
@@ -1149,7 +1286,7 @@
     .copyright{
 
     font-size: 10px;
-    font-weight: 1;
+    
     line-height: 10px;
  
     padding-top: 20px;
@@ -1214,9 +1351,9 @@
 }
 
 .title-master{
-    font-family: 'Montserrat','Raleway', 'Helvetica', 'roboto', arial, sans-serif;
+    font-family:'Poppins', sans-serif, 'Montserrat','Raleway', 'Helvetica', 'roboto', arial, sans-serif;
     font-size: 36px;
-    font-weight: 800;
+    font-weight: 700;
     line-height: 46px;
 
     margin-top: 20px;
@@ -1225,9 +1362,9 @@
 
 .title-theme{
     display: block;
-    font-family: 'Montserrat', 'Raleway', 'Helvetica', 'roboto', arial, sans-serif;
+    font-family: 'Poppins', sans-serif,'Montserrat', 'Raleway', 'Helvetica', 'roboto', arial, sans-serif;
     font-size: 20px;
-    font-weight: 900;
+    font-weight: 700;
     line-height: 30px;
 
     margin-top: 0;
@@ -1236,9 +1373,9 @@
 }
 
 .context{
-    font-family: 'Raleway', 'Helvetica', 'roboto', arial, sans-serif;
+    font-family: 'Poppins', sans-serif,'Raleway', 'Helvetica', 'roboto', arial, sans-serif;
     font-size: 18px;
-    font-weight: 100;
+    font-weight: 300;
     line-height: 30px;
 
     margin-top: 0;
@@ -1310,9 +1447,9 @@
     left: 0;
 
     display: inline-block;
-    font-family: 'Raleway', 'Helvetica', 'roboto', arial, sans-serif;
+    font-family:'Poppins', sans-serif, 'Raleway', 'Helvetica', 'roboto', arial, sans-serif;
     font-size: 18px;
-    font-weight: 100;
+    font-weight: 300;
     line-height: 30px;
 
     /*background-color: #f4f4;*/
@@ -1320,9 +1457,9 @@
 
 .skill_text{
     display: inline-block;
-    font-family: 'Raleway', 'Helvetica', 'roboto', arial, sans-serif;
+    font-family:'Poppins', sans-serif, 'Raleway', 'Helvetica', 'roboto', arial, sans-serif;
     font-size: 18px;
-    font-weight: 100;
+    font-weight: 300;
     line-height: 30px;
 
     /*background-color: #f4f4;*/
@@ -1331,9 +1468,9 @@
 
 .title-block{
     display: block;
-    font-family: 'Raleway', 'Helvetica', 'roboto', arial, sans-serif;
+    font-family:'Poppins', sans-serif, 'Raleway', 'Helvetica', 'roboto', arial, sans-serif;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 30px;
 
     margin-top: 20;
@@ -1341,9 +1478,9 @@
 }
 
 .content-block{
-    font-family: 'Raleway', 'Helvetica', 'roboto', arial, sans-serif;
+    font-family: 'Poppins', sans-serif,'Raleway', 'Helvetica', 'roboto', arial, sans-serif;
     font-size: 18px;
-    font-weight: 100;
+    font-weight: 300;
     line-height: 30px;
 
     margin-top: 0;
@@ -1396,9 +1533,9 @@
 }
 
 .caption{
-    font-family: 'Raleway', 'Helvetica', 'roboto', arial, sans-serif;
+    font-family:'Poppins', sans-serif, 'Raleway', 'Helvetica', 'roboto', arial, sans-serif;
     font-size: 16px;
-    font-weight: 100;
+    font-weight: 300;
     line-height: 16px;
 
     margin-top: 20px;
@@ -1698,9 +1835,9 @@
 
 .contact-text{
     font-size: 18px;
-    font-weight: 100;
+    font-weight: 300;
     line-height: 20px;
-    font-family: 'Raleway', 'Helvetica', 'roboto', arial, sans-serif;
+    font-family:'Poppins', sans-serif, 'Raleway', 'Helvetica', 'roboto', arial, sans-serif;
     color: #000;
     opacity: .4;
     text-align: center;
@@ -1712,7 +1849,7 @@
     .contact-text{
 
     font-size: 12px;
-    font-weight: 100;
+    
     line-height: 12px;
  
     padding-top: 10px;
@@ -1789,6 +1926,41 @@
 
 @media (min-width: 1200px){
     .banner_photo_redesignSP{
+
+    height: 400px;
+    margin-top: 110px;
+
+    }
+}
+
+/*-------------------*/
+/*Checkin---------------*/
+
+.banner_photo_checkin{
+
+    width: 100%;
+    height: 400px;
+
+    background-image: url("../images/checkin/checkinKV.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    margin-top: 110px;
+
+}
+
+@media (max-width: 768px){
+    .banner_photo_checkin{
+
+    height: 200px;
+    margin-top: 66px;
+
+    }
+}
+
+@media (min-width: 1200px){
+    .banner_photo_checkin{
 
     height: 400px;
     margin-top: 110px;
