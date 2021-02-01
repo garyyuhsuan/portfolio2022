@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Event-Checkin System Design | GARY CHANG</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+	<link rel="icon" type="image/x-icon" href="images/faviconNew.ico" />
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" href="css/component.css">
+	<link rel="stylesheet" href="css/effect.css">
+	<link rel="stylesheet" href="css/effecT2.css">
+	<link rel="stylesheet" href="css/gli_about.css">
+	<link rel="stylesheet" href="css/gli_works.css">
+	<link rel="stylesheet" href="css/gli_resume.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/jquery.fancybox.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="bg"></div>
+
+		<!-- Strat header -->
+
+		<header class="header wow fadeInUp">
+
+			<div class="container">
+
+				<div class="navbar navbar--collapse u-clearfix">
+
+					<div class="logo-bar navbar__logo-bar">
+						
+						<div class="logo-btn">
+
+							
+							<lottie-player class="motionLogo" src="https://assets7.lottiefiles.com/packages/lf20_d7frnjiz.json" mode="bounce" background="transparent"  speed="1"   autoplay></lottie-player>
+							
+						</div>
+
+						<div class="space"></div>
+
+
+						<a href="index.html" class="text-btn">GARY CHANG</a>
+
+					</div>
+
+					<div class="nav navbar__nav">
+
+						<a href="#popup-overlay" class="menu-toggle">
+							<span></span>
+							<span></span>
+							<span></span>
+							
+							
+
+						</a>
+
+						<div id="popup-overlay" class="popup-menu">
+							<div class="container">
+								<div class="u-clearfix">
+									<a href="#" class="popup-menu__close">
+										<span></span>
+										<span></span>
+									</a>
+								</div>
+								<ul>
+									<li><a href="index.html#about" class="popup-menu__item glitch1">ABOUT</a></li>
+									<li><a href="index.html#works" class="popup-menu__item glitch2">WORKS</a></li>
+									<li><a href="https://reurl.cc/E7bZK1" class="popup-menu__item glitch3" target="_blank">RESUME</a></li>
+								</ul>
+								
+							</div>
+
+						</div>
+						
+					</div>
+					
+				</div>
+				
+			</div>
+			
+		</header>
+
+		<!-- End header -->
+
+		<div class="banner">
+			
+				<div class="banner_photo_checkin wow fadeInUp"></div>
+
+		</div>
+
+		<!-- Strat work -->
+
+		<div class="container">
+			
+			<div class="work-content">
+
+				<div class="title-master wow fadeInUp">
+					Event-Checkin System Design
+				</div>
+
+				<div class="title-theme wow fadeInUp">OVERVIEW
+				</div>
+
+				<div class="context wow fadeInUp">
+					This is a pandemic project.<br>
+					As the virus raging on the planet, people here in Taiwan were carrying on a rather peaceful lifestyle. However, the policy were still implemented to keep the society in cautious.<br>
+					Therefore, the participants in large campaign and gathering need to be tracked and recorded.<br> 
+					Especially for religious institutions, as they tend to hold weekly events and having crowded attendants. Joining the development team, I worked as the designer to customize the check in system dedicated for a Catholic church.<br>
+				</div>
+
+				<div class="row_overview">
+							
+							<div class="left_col wow fadeInUp">
+							
+								<div class="title-theme">
+									COLLABORATE WITH
+								</div>
+										
+								<div class="team_text">
+
+									Project Manager<br>
+									Front-End Engineer<br>
+									Back-End Engineer<br>
+
+								</div>
+
+							</div>
+
+							<div class="right_col wow fadeInUp">
+								
+								<div class="title-theme">
+									MY ROLE
+								</div>
+
+								<div class="skill_text">
+
+									UX / UI Design<br>
+									Branding Design<br>
+									Style Guide Definition<br>
+				
+								</div>
+
+							</div>
+
+				</div>
+
+				<div class="block-space"></div>
+
+
+<!-- PHASE1 -->
+
+				<div class="title-theme wow fadeInUp">
+					PHASE 1 CHECK-IN PROCESS DESIGN <br><br>
+				</div>
+
+				<div class="title-block wow fadeInUp">
+					Identifying Issues
+				</div>
+
+				<div class="content-block wow fadeInUp">
+					Through on-site observation, development team create a simple login page which can be accessed by a QR code, and we found:<br>
+					1. People clustered when the event about to began, therefore the check in process didn’t have enough time to finish.<br>
+					2. Scanning function was varied between devices, causing the check in process might fail to access the check in page in the beginning.<br>
+				</div>
+
+				<div class="pic-block wow fadeInUp">
+							
+					<img class="pic-ui-block" src="images/checkin/issue.png" alt="">
+
+				</div>
+
+				<div class="title-block wow fadeInUp">
+					Reconstruct User Flow
+				</div>
+
+				<div class="content-block wow fadeInUp">
+					Scenerio 1<br>
+					The registration status was automatically checked through the login process, which combined the login and the sign-up functions together.
+				</div>
+
+				<div class="pic-block wow fadeInUp">
+							
+					<img class="pic-ui-block" src="images/checkin/flow1.png" alt="">
+
+				</div>
+
+				<div class="content-block wow fadeInUp">
+					Scenerio 2<br>
+					Generating personal QR code to finish the check-in process offline.<br>
+					(Only available when operating with PC/laptop)
+				</div>
+
+				<div class="pic-block wow fadeInUp">
+							
+					<img class="pic-ui-block" src="images/checkin/flow2.png" alt="">
+
+				</div>
+
+				<div class="title-block wow fadeInUp">
+					Branding Design
+				</div>
+
+				<div class="pic-block wow fadeInUp">
+							
+					<img class="pic-ui-block" src="images/checkin/Brand.png" alt="">
+
+				</div>
+
+				<div class="title-block wow fadeInUp">
+					Prototype
+				</div>
+
+				<div class="pic-block wow fadeInUp">
+							
+					<img class="pic-ui-block" src="images/checkin/login.gif" alt="">
+
+				</div>
+
+				<div class="title-block wow fadeInUp">
+					Style Guideline
+				</div>
+
+				<div class="content-block wow fadeInUp">
+					Principles:<br>
+					1. Font size was scaled up to be elder friendly.<br>
+					2. High color contrast was needed to be easily recognizable, and accessible.				
+				</div>
+
+				<div class="pic-block wow fadeInUp">
+							
+					<img class="pic-ui-block" src="images/checkin/style.png" alt="">
+
+				</div>
+
+
+<!-- PHASE2 -->
+
+				<div class="title-theme wow fadeInUp">
+					PHASE 2 CMS DESIGN FOR ADMIN<br><br>
+				</div>
+
+				<div class="title-block wow fadeInUp">
+					Goals: Computing the weekly collected data into the useful insight.
+				</div>
+
+				<div class="content-block wow fadeInUp">
+					Even the events were usually held on Sunday, there were multiple sections held in different periods. The church also found that different sections tended to have different kind of participants. In order to provide the content that could be better resonated within the mass, the church would also like to know more about the characteristics that varied between the participants by sections.<br><br>
+				</div>
+
+				<div class="title-block wow fadeInUp">
+					Deciding the Analytical Division
+				</div>
+
+				<div class="content-block wow fadeInUp">
+					Age, gender, and time were the 3 primary division that could define the participants. Under the circumstance that the church wasn’t quite sure what kind of analytical method would generate the most useful insight. The development team decided to explore the function through a more flexible direction.
+				</div>
+
+				<div class="pic-block wow fadeInUp">
+							
+					<img class="pic-ui-block" src="images/checkin/division.png" alt="">
+
+				</div>
+
+				<div class="title-block wow fadeInUp">
+					Iterating Design
+				</div>
+
+				<div class="content-block wow fadeInUp">
+					However, even the function was designed to provide the user with the flexibility to customize the analytical division. We found the church was not keen to the analytical mindset. Therefore, the development team decided to follow a more intuitive way, in order to guide the church to build a more comprehensive mental model, and generate a brief yet thorough overview of the data itself.
+				</div>
+
+				<div class="pic-block wow fadeInUp">
+							
+					<img class="pic-ui-block" src="images/checkin/chart.png" alt="">
+
+				</div>
+
+				<div class="title-block wow fadeInUp">
+					User Flow
+				</div>
+
+				<div class="content-block wow fadeInUp">
+					Scenerio 1<br>
+					Having a quick overview of the data within a specific time slot.
+				</div>
+
+				<div class="pic-block wow fadeInUp">
+							
+					<img class="pic-ui-block" src="images/checkin/data1.gif" alt="">
+
+				</div>
+
+				<div class="content-block wow fadeInUp">
+					Scenerio 2<br>
+					Focusing on 2 different time slot with further comparison.
+				</div>
+
+				<div class="pic-block wow fadeInUp">
+							
+					<img class="pic-ui-block" src="images/checkin/data2.gif" alt="">
+
+				</div>
+
+				<div class="title-block wow fadeInUp">
+					Assisting Features
+				</div>
+
+				<div class="content-block wow fadeInUp">
+					
+					1. Checking up the composition of the different period within one day.<br>
+					2. Setting up the definition of the buffering time to have a more precise comparison.
+				</div>
+
+				<div class="pic-block wow fadeInUp">
+							
+					<img class="pic-ui-block" src="images/checkin/data3.gif" alt="">
+
+				</div>
+
+				<div class="title-block wow fadeInUp">
+					State Motion Design
+				</div>
+
+				<div class="pic-block wow fadeInUp">
+							
+					<img class="pic-ui-block" src="images/checkin/data4.gif" alt="">
+
+				</div>
+
+				<div class="title-block wow fadeInUp">
+					Next
+				</div>
+
+				<div class="content-block wow fadeInUp">
+				
+					1. Subscription-Based<br>
+					In order to grow the system into a more scalable and profitable product.<br>
+					2. Cross Disciplinary Applied<br>
+					Providing more event-holders with check in flexibility and the data insight from the attendants.
+				</div>
+
+				<br>
+				<br>
+				<br>
+				<br>
+
+
+
+			</div>
+		</div>
+
+		<!-- Start footer -->
+		<footer class="footer">
+
+			<div class="container">
+
+				<div class="footer-title u-clearfix">
+					
+					<img class="image-footerlogo" src="images/logoNew.svg" alt="">
+
+					<div class="footer-text">GARY CHANG PORTFOLIO</div>
+
+					<br>
+
+				</div>
+
+				<div class="contact-text">
+					gary.yuhsuan@gmail.com．(886) 938016589
+				</div>
+
+				<br>
+
+				<div class="copyright">Copyright © 2020 GARY CHANG All Right Reserved</div>
+
+			</div>
+
+		</footer>
+		<!-- End footer -->
+
+
+	</div>
+
+	<!-- JS -->
+	<script src="js/jquery-2.0.2.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/jquery.fancybox.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/custom.js"></script>
+	<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+	
+</body>
+</html>
